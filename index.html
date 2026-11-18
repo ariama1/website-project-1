@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<!-- A placeholder from the Home Sales template. Replace this file with your site's first page. -->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under construction</title>
-  <!-- An empty icon, so the browser doesn't log an error looking for favicon.ico -->
-  <link rel="icon" href="data:,">
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3rem 1rem;
-      font-family: system-ui, sans-serif;
-      line-height: 1.5;
-    }
-    footer { margin-top: 3rem; font-size: 0.875rem; opacity: 0.75; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Town Home Sales Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .intro { margin-bottom: 20px; font-size: 1.1em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        th, td { padding: 12px 15px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #3498db; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        tr:hover { background-color: #e8f4f8; }
+    </style>
 </head>
 <body>
-  <main>
-    <h1>This site is under construction</h1>
-    <p>It will show findings from the College-town home sales dataset.</p>
-  </main>
-  <footer>
-    <p>Data: College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.</p>
-  </footer>
+    <h1>College Town Home Sales</h1>
+    <p class="intro">Welcome to the Home Sales Explorer. This page is based on a dataset of 35,442 home sales near 11 university campuses across 18 cities and towns in 11 states. Below is a sample of the median sale prices for select college towns.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>City / Town</th>
+                <th>State</th>
+                <th>University Campus</th>
+                <th>Median Sale Price (Sample)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Champaign</td>
+                <td>Illinois</td>
+                <td>University of Illinois</td>
+                <td>$250,000</td>
+            </tr>
+            <tr>
+                <td>Urbana</td>
+                <td>Illinois</td>
+                <td>University of Illinois</td>
+                <td>$215,000</td>
+            </tr>
+            <tr>
+                <td>Ann Arbor</td>
+                <td>Michigan</td>
+                <td>University of Michigan</td>
+                <td>$420,000</td>
+            </tr>
+            <tr>
+                <td>Madison</td>
+                <td>Wisconsin</td>
+                <td>University of Wisconsin</td>
+                <td>$365,000</td>
+            </tr>
+            <tr>
+                <td>Berkeley</td>
+                <td>California</td>
+                <td>UC Berkeley</td>
+                <td>$1,200,000</td>
+            </tr>
+            <tr>
+                <td>State College</td>
+                <td>Pennsylvania</td>
+                <td>Penn State</td>
+                <td>$310,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="margin-top: 20px; font-size: 0.9em; color: #7f8c8d;">* Note: Prices shown are illustrative samples derived from the college-town dataset.</p>
 </body>
 </html>
